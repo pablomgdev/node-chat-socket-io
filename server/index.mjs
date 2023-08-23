@@ -1,11 +1,17 @@
 import { Server } from "socket.io";
 
-const io = new Server(httpServer, {
+const PORT = 3000;
+
+const io = new Server({
   /* options here */
 });
 
 io.on("connection", (socket) => {
-  console.log("Connection stablished.");
+  console.log(`Socket connection stablished (id: ${socket.id}).`);
 });
 
-io.listen(3000);
+io.listen(PORT);
+
+io.httpServer.on("listening", () => {
+  console.log(`[INFO] Server started on port ${PORT}.`);
+});
