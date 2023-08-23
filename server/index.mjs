@@ -7,7 +7,7 @@ const io = new Server({
 });
 
 io.on("connection", (socket) => {
-  console.log(`Socket connection stablished (id: ${socket.id}).`);
+  console.log(`[INFO] Socket connection stablished (id: ${socket.id}).`);
 });
 
 io.listen(PORT);
