@@ -1,4 +1,5 @@
 import { Server } from "socket.io";
+import * as logger from "logger";
 
 const SERVER_PORT = process.env.SERVER_PORT || 3000;
 const ACCEPTABLE_ORIGINS = process.env.ACCEPTABLE_ORIGINS || "*";
@@ -12,11 +13,11 @@ const io = new Server({
 });
 
 io.on("connection", (socket) => {
-  console.log(`[INFO] Socket connection stablished (id: ${socket.id}).`);
+  logger.logInfo(`Socket connection stablished (id: ${socket.id}).`);
 });
 
 io.listen(SERVER_PORT);
 
 io.httpServer.on("listening", () => {
-  console.log(`[INFO] Server started on port ${SERVER_PORT}.`);
+  logger.logInfo(`Server started on port ${SERVER_PORT}.`);
 });
