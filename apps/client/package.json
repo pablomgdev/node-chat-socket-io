@@ -1,5 +1,5 @@
 {
-  "name": "@pablomgdev/client",
+  "name": "@pablomgdev/chat-with-node-client",
   "version": "1.0.0",
   "description": "Client of a chat made with Node.",
   "main": "index.mjs",

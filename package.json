@@ -5,7 +5,7 @@
   "main": "index.js",
   "workspaces": [
     "packages/*",
-    "src/*"
+    "apps/*"
   ],
   "scripts": {
     "co": "sui-mono commit",

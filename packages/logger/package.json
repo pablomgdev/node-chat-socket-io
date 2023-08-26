@@ -1,5 +1,5 @@
 {
-  "name": "@pablomgdev/logger",
+  "name": "@pablomgdev/chat-with-node-logger",
   "version": "1.0.0",
   "description": "",
   "main": "index.mjs",
