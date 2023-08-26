@@ -17,3 +17,5 @@ socket.on("disconnect", () => {
     `Socket connection closed (id: ${socket?.id ?? "No socket ID."}).`
   );
 });
+
+logger.logInfo("Console client app started.");
