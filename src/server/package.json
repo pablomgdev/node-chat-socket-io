@@ -1,5 +1,5 @@
 {
-  "name": "@chat-with-node/server",
+  "name": "@pablomgdev/server",
   "version": "1.0.0",
   "description": "Server of a chat made with Node.",
   "main": "index.mjs",
@@ -9,6 +9,7 @@
   "author": "pablomgdev",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "^4.7.2"
+    "socket.io": "^4.7.2",
+    "@pablomgdev/logger": "1.0.0"
   }
 }

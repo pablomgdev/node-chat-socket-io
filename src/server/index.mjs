@@ -1,5 +1,5 @@
 import { Server } from "socket.io";
-import * as logger from "logger";
+import * as logger from "@pablomgdev/logger";
 
 const SERVER_PORT = process.env.SERVER_PORT || 3000;
 const ACCEPTABLE_ORIGINS = process.env.ACCEPTABLE_ORIGINS || "*";

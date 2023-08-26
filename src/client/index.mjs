@@ -1,5 +1,5 @@
 import { io } from "socket.io-client";
-import * as logger from "logger";
+import * as logger from "@pablomgdev/logger";
 
 const CHAT_SERVER_DOMAIN =
   process.env.CHAT_SERVER_DOMAIN || "http://localhost:3000";
