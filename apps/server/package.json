@@ -1,7 +1,7 @@
 {
   "name": "@pablomgdev/chat-with-node-server",
   "version": "1.0.0",
-  "description": "Server of a chat made with Node.",
+  "description": "Server for a chat made with Node.",
   "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

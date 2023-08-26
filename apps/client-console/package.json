@@ -1,7 +1,7 @@
 {
-  "name": "@pablomgdev/chat-with-node-client",
+  "name": "@pablomgdev/chat-with-node-console-client",
   "version": "1.0.0",
-  "description": "Client of a chat made with Node.",
+  "description": "Console client for a chat made with Node.",
   "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
