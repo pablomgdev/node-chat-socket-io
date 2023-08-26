@@ -1,2 +1,1 @@
-- What if I have to create a new package. I have to copy paste everytime the depedencies that are always used (like linter).
 - Check if linter is being used or not.
