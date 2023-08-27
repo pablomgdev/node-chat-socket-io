@@ -1,1 +1,0 @@
-- Fix linter. Make prettier be compatible with the linter.
