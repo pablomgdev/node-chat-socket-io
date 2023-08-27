@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "co": "sui-mono commit",
+    "lint": "eslint . --fix --ext .js,.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
