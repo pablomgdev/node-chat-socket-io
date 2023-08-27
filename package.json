@@ -9,7 +9,11 @@
   ],
   "scripts": {
     "co": "sui-mono commit",
-    "lint": "eslint . --fix --ext .js,.mjs",
+    "lint:check": "eslint . --ext .js,.mjs",
+    "lint:fix": "eslint . --fix --ext .js,.mjs",
+    "prettier:check": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "format": "npm run lint:fix && npm run prettier:fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,12 +21,14 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "8.48.0",
+    "eslint-config-prettier": "9.0.0",
     "eslint-config-standard": "17.1.0",
     "eslint-plugin-import": "2.28.1",
     "eslint-plugin-n": "16.0.2",
-    "eslint-plugin-promise": "6.1.1"
+    "eslint-plugin-promise": "6.1.1",
+    "prettier": "3.0.2"
   },
   "dependencies": {
-    "@s-ui/mono": "^2.38.0"
+    "@s-ui/mono": "2.38.0"
   }
 }
