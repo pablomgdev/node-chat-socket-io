@@ -1,9 +1,11 @@
 import { Server } from 'socket.io'
 import * as logger from '@pablomgdev/logger'
-
-const SERVER_PORT = process.env.SERVER_PORT || 3000
-const ACCEPTABLE_ORIGINS = process.env.ACCEPTABLE_ORIGINS || '*'
-const ALLOWED_HEADERS = process.env.ALLOWED_HEADERS || '*'
+import { USER_SENDS_MESSAGE_EVENT, socketUtilities } from '@pablomgdev/shared'
+import {
+  SERVER_PORT,
+  ACCEPTABLE_ORIGINS,
+  ALLOWED_HEADERS,
+} from './constants.mjs'
 
 const io = new Server({
   cors: {

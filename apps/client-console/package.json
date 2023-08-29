@@ -9,6 +9,7 @@
   "author": "pablomgdev",
   "license": "ISC",
   "dependencies": {
+    "@pablomgdev/shared": "1.0.0",
     "@pablomgdev/inputreader": "1.0.0",
     "@pablomgdev/logger": "1.0.0",
     "socket.io-client": "4.7.2"
