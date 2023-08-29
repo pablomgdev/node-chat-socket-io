@@ -1,9 +1,14 @@
 import { io } from 'socket.io-client'
-import * as constants from './constants.mjs'
 import * as logger from '@pablomgdev/logger'
 import { getUserInput } from '@pablomgdev/inputreader'
+import {
+  CHAT_SERVER_DOMAIN,
+  EXIT_COMMAND,
+  NO_ID_TEXT,
+  USER_SENDS_MESSAGE_EVENT,
+} from './constants.mjs'
 
-const socket = io(constants.CHAT_SERVER_DOMAIN)
+const socket = io(CHAT_SERVER_DOMAIN)
 
 socket.on('connect', (socket) => {
   logger.logInfo(
@@ -17,14 +22,14 @@ socket.on('disconnect', () => {
 })
 ;(async () => {
   logger.log('💬 You have been joined to the chat! Type messages!')
-  logger.logInfo(`Type ${constants.EXIT_COMMAND} to leave the chat.`)
+  logger.logInfo(`Type ${EXIT_COMMAND} to leave the chat.\n`)
   let message = ''
   do {
     if (message) {
-      logger.log(`${socket.id ?? constants.NO_ID_TEXT}: ${message}`)
-      socket.emit(constants.USER_SENDS_MESSAGE_EVENT, message)
+      logger.log(`${socket.id ?? NO_ID_TEXT}: ${message}\n`)
+      socket.emit(USER_SENDS_MESSAGE_EVENT, message)
     }
     message = await getUserInput()
-  } while (message !== constants.EXIT_COMMAND)
+  } while (message !== EXIT_COMMAND)
   process.exit(0)
 })()
