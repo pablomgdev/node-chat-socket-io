@@ -6,6 +6,10 @@ const LOG_TYPES = {
   ERROR: '[ERROR]',
 }
 
+function log(message) {
+  console.log(`${message}`)
+}
+
 function logInfo(message) {
   console.log(`${LOG_TYPES.INFO}: ${message}`)
 }
@@ -18,4 +22,4 @@ function logError(message) {
   console.log(pc.red(`${LOG_TYPES.ERROR}: ${message}`))
 }
 
-export { logInfo, logSuccess, logError }
+export { log, logInfo, logSuccess, logError }
