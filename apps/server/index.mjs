@@ -16,6 +16,14 @@ const io = new Server({
 
 io.on('connection', (socket) => {
   logger.logInfo(`Socket connection stablished (id: ${socket.id}).`)
+  socket.on(USER_SENDS_MESSAGE_EVENT, (message) => {
+    console.log(
+      `Message got from client (${socketUtilities.getSocketIdentifier(
+        socket,
+      )}): `,
+      message,
+    )
+  })
 })
 
 io.listen(SERVER_PORT)
