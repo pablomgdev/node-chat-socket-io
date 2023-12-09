@@ -1,5 +1,5 @@
 > [!WARNING]  
-> This repository is no longer mantained.
+> This repository is no longer maintained.
 
 # Chat with Node and Socket.IO
 
