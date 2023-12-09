@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repository is no longer mantained.
+
 # Chat with Node and Socket.IO
 
 ## Pending tasks
